@@ -19,12 +19,9 @@ const users = [
     { id: 4, name: 'Janker', email: 'janker@gmail.com' },
 ];
 
-// username: dbUser9
-// Password:Dn7wHO3xre7OoHq3
 
 
-
-const uri = "mongodb+srv://dbUser9:Dn7wHO3xre7OoHq3@cluster0.vvaslnb.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://username:password@cluster0.vvaslnb.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 async function run() {
