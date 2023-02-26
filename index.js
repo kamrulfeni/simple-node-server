@@ -1,4 +1,5 @@
 const express = require('express');
+require("dotenv").config();
 cors = require('cors');
 const app = express();
 const { MongoClient, ServerApiVersion } = require('mongodb');
@@ -21,7 +22,7 @@ const users = [
 
 
 
-const uri = "mongodb+srv://username:password@cluster0.vvaslnb.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://dbUser9:oNhHmAL7YHA445pv@cluster0.vvaslnb.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 async function run() {
